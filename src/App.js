@@ -72,12 +72,12 @@ function App() {
       <div className="container mx-center h-screen">
         <h1 className="temp">
           GPA CALCULATOR
-      </h1>
+        </h1>
         {/* TODO ADD UI */}
         <div className="space-x-4 mine">
           <div>
             <ul className="list-group my-4">
-              <h1 className="temp text-2xl my-3">My courses</h1>
+              <h2 className="temp text-2xl my-3">My courses</h2>
               {renderCourseCard()}
             </ul>
 

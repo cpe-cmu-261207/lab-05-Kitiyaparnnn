@@ -33,6 +33,7 @@ const CourseForm = () => {
       CREDITS.map((item) => (<option key={item} value={item}>{item}</option>))
     )
   }
+
   return (
     <form>
       <div className="row">
@@ -79,7 +80,7 @@ const CourseForm = () => {
             {renderGrade()}
           </select>
         </div>
-        <div onClick={() => Context.addCourse(state)}>
+        <div className="col" onClick={() => Context.addCourse(state)}>
           <span className="text-buttom text-success fs-2"><i class="fas fa-plus-circle"></i></span>
         </div>
       </div>
