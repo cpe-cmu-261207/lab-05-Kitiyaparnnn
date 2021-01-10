@@ -52,8 +52,6 @@ code {
   border-radius: 25px;
 }
 
-/* .row {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+.row {
   width: auto;
-} */
+} 

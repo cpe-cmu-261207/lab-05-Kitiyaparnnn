@@ -1,4 +1,4 @@
-import { createContext, useReducer, useState ,useEffect } from "react";
+import { createContext, useReducer, useState, useEffect } from "react";
 import CourseCard from "./components/CourseCard";
 import CourseForm from "./components/CourseForm";
 
@@ -11,16 +11,16 @@ function App() {
   //ทำงานเมื่อตัวแปรที่ใส่ใน array มีค่าเปลี่ยนไป ใช้กับ localStorage เพื่อเก็บข้อมูลเก่าไว้
   useEffect(() => {
     const previous = localStorage.getItem('data')
-    if(previous !== null){
+    if (previous !== null) {
       setMyCourse(JSON.parse(previous))
     }
 
   }, [])
 
   useEffect(() => {
-    localStorage.setItem('data',JSON.stringify(myCourses))
+    localStorage.setItem('data', JSON.stringify(myCourses))
     console.log(JSON.stringify(myCourses))
-  }, [myCourses]) 
+  }, [myCourses])
 
   const renderCourseCard = () => {
     return (
@@ -68,11 +68,14 @@ function App() {
   }
 
   return (
-    <eieiContext.Provider value = {{addCourse}}>
+    <eieiContext.Provider value={{ addCourse }}>
       <div className="container mx-center h-screen">
-        <h1 className="temp">
-          GPA CALCULATOR
+        <div className="temp badge bg-warning text-wrap">
+          <h1>
+            GPA CALCULATOR
         </h1>
+        </div>
+
         {/* TODO ADD UI */}
         <div className="space-x-4 mine">
           <div>
