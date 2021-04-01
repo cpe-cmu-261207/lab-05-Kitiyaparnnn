@@ -32,7 +32,8 @@ function App() {
     // TODO
     // alert("eiei")
     const add_course = [...myCourses, data]
-    if (data.name == "" || data.code == "" || data.creditt == "" || data.gradee == "") { alert("Please input course information") }
+    if (data.name == "" || data.code == "" || data.creditt == "" || data.gradee == "") 
+    { alert("Please input course information") }
     else if (data.code.length != 6) {
       alert("course code must has 6 character")
     }
